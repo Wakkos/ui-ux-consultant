@@ -55,7 +55,7 @@ This means I can understand code, deal with it and know what to do with my front
 -  [Youtube #DesignIO Channel](https://www.youtube.com/playlist?list=PLIcuwIrm4rKf_JLA0v2GlAeRL4q0QN2BJ): I host a weekly hangout to show the spanish community the best way to create websites.
 - And my own [Youtube Channel](https://www.youtube.com/user/WakkosWebcasts/) where I record some screencast to teach CSS tips.
 
-## Latests Experience
+## Latest Experience
 
 ###  Web Instructor
 - 02/2012 - Currently working
