@@ -1,0 +1,44 @@
+
+/* TEAM */
+  Code/Design: Daniel Martínez
+  Site:http://coolvillage.es 
+  Twitter: @Wakkos
+  Location: Valencia / Spain (Or maybe not)
+
+  Illustrations: Andrea Nogués
+  Site:http://coolvillage.es 
+  Twitter: @madhatter_lady
+  Location: Valencia / Spain
+
+  Fun & Entertainment:
+  Totoro & Stimpy, cats.
+
+
+/* SITE */
+  Standards: HTML5 & CSS3 
+  Components: Wakkos CSS Framework
+  Software: SublimeText, Illustrator            
+
+
+                                    
+                              !         !          
+                             ! !       ! !          
+                            ! . !     ! . !          
+                               ^^^^^^^^^ ^            
+                             ^             ^          
+                           ^  (0)       (0)  ^       
+                          ^        ""         ^       
+                         ^   ***************    ^     
+                       ^   *                 *   ^    
+                      ^   *   /\   /\   /\    *    ^   
+                     ^   *                     *    ^
+                    ^   *   /\   /\   /\   /\   *    ^
+                   ^   *                         *    ^
+                   ^  *                           *   ^
+                   ^  *                           *   ^
+                    ^ *                           *  ^  
+                     ^*                           * ^ 
+                      ^ *                        * ^
+                      ^  *                      *  ^
+                        ^  *       ) (         * ^
+                            ^^^^^^^^ ^^^^^^^^^ 

@@ -1,0 +1,91 @@
+
+
+
+
+
+/*------------------------------------*\
+    $FUENTES
+\*------------------------------------*/
+/*
+ * Por defecto incluyo una fuente de icomoon (http://icomoon.io/)
+ * con 5 iconos que se encuentra en la carpeta /fonts.
+ * Ve y adàptalos a tu web.
+ */
+@font-face {
+	font-family: 'wakkos';
+	src:url('../fonts/wakkos.eot?4ani1o');
+	src:url('../fonts/wakkos.eot?#iefix4ani1o') format('embedded-opentype'),
+		url('../fonts/wakkos.woff?4ani1o') format('woff'),
+		url('../fonts/wakkos.ttf?4ani1o') format('truetype'),
+		url('../fonts/wakkos.svg?4ani1o#wakkos') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family:$codefont;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@include media-query-bp($bp3) {
+		font-family: 'wakkos';
+		font-size: 2em;
+		line-height: 2;
+	}
+}
+
+.icon-phone:before {
+	content: "Tel.: ";
+	@include media-query-bp($bp3) {
+		content: "\e601";
+	}
+}
+.icon-email:before {
+	content: "Email: ";
+	@include media-query-bp($bp3) {
+		content: "\e602";
+	}
+}
+.icon-codepen:before {
+	content: "Codepen: ";
+	@include media-query-bp($bp3) {
+		content: "\e600";
+	}
+}
+.icon-twitter:before {
+	content: "Twitter:";
+	@include media-query-bp($bp3) {
+		content: "\e604";
+	}
+}
+.icon-github:before {
+	content: "Github";
+	@include media-query-bp($bp3) {
+		content: "\e609";
+	}
+}
+
+
+
+// .icon-phone:before {
+// 	content: "\e601";
+// }
+// .icon-email:before {
+// 	content: "\e602";
+// }
+// .icon-codepen:before {
+// 	content: "\e600";
+// }
+// .icon-twitter:before {
+// 	content: "\e604";
+// }
+// .icon-github:before {
+// 	content: "\e609";
+// }

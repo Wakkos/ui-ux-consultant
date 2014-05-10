@@ -1,0 +1,180 @@
+
+
+
+
+
+/*------------------------------------*\
+    $NAVEGACIÓN
+\*------------------------------------*/
+
+.toggle-nav {
+	display:none;
+}
+
+.switch {
+	/**
+     * Place a hamburger (don’t hate the player, hate the game...) icon
+     * over the top of our nav element. It is a <label> that triggers 
+     * a checkbox.
+     */
+    &:after {
+        content: "☰";
+        font-size: $nav-icon-size;
+        width: 1em;
+        line-height: 1;
+        text-align: center;
+        color:$white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top:  -($nav-icon-size / 2);
+        margin-left: -($nav-icon-size / 2);
+        @include media-query-bp($bp3) {
+			content: normal;
+            content: none;
+        }
+     }
+	@include media-query-bp($bp3) {
+		display:none;	
+	}
+}
+/*
+ * Navegación, oculta en resoluciones pequeñas.
+ */
+.nav-main {
+	position: absolute;
+	top:$baselineheight / 4;
+	right:$gutterwidth / 4;
+    z-index: 100;
+    width:  $nav-width;
+    height: $nav-height;
+    color: $nav-color;
+    background-color: $nav-background;
+    overflow: hidden;
+    border-radius: 0;
+    cursor: pointer;
+    @include media-query-bp($bp3) {
+        position: static;
+        width:  auto;
+        height: auto;
+        display:table;
+		width:100%;
+        vertical-align: top;
+        min-width:275px;
+        margin-bottom: $baseline;
+        background-color: $nav-background;
+    }
+ }
+
+/**
+ * When the checkbox is :checked, we simply allow the absolutely positioned
+ * dropdown to be seen.
+ */
+.toggle-nav:checked + {
+	
+	.nav-main {
+    	overflow: visible;
+	}
+    /**
+     * Change the hamburger to a cross when the nav is open.
+     */    
+    .switch:after {
+        content: "✕";
+
+        /**
+         * Remove the cross on wider viewports.
+         * We have to repeat this chunk because of limitations with Sass.
+         */
+        @include media-query-bp($bp3) {
+			content: normal;
+            content: none;
+        }
+    }
+
+}
+
+	/**
+     * The absolutely positioned dropdown of links.
+     *
+     * 1. Position the dropdown underneath the trigger.
+     */
+
+	.nav__list {
+        list-style: none;
+        margin:  0;
+        padding: 0;
+        padding-top: $nav-height;
+        position: absolute;
+        top:   0;
+        right:  0;
+        background-color: $nav-background;
+        width: 290px;
+        border-radius: $radius;
+        z-index: -1;
+		@include media-query-bp($bp3) {
+			padding-top: 0;
+			position: static;
+			@include max-width();
+			display: table;
+			text-align: right;
+			z-index: 100;
+            border-radius: 0;
+		}
+    }
+
+    	.nav__item {  
+            background-color: $nav-lists-background;
+            	@include media-query-bp($bp3) {
+					display: table-cell;
+					text-align: center;
+					margin-left: $gutterwidth;
+					vertical-align: middle;
+            	}
+            a, a:visited {
+            	font-family: $codefont;
+            	@include font-size(12);
+                color: $nav-color;
+                display: block;
+                padding-left:  ($nav-width - $nav-icon-size) / 2;
+                line-height: $nav-width;
+                text-shadow: none;
+                background: none;
+                &:hover, &:visited:hover {
+                    text-decoration: none;
+                }
+                @include media-query-bp($bp3) {
+                	padding-left:0;
+            	}
+            }
+
+            &.active {
+                border-right:10px solid $basecolor;
+                background-color: lighten($black, 15);
+            }
+
+            &:hover {
+                @extend .active;
+                @include media-query-bp($bp3) {
+                	border-right:none;
+                	background-color:transparent;
+            	}
+            }
+            .icontext {
+            	@include media-query-bp($bp3) {
+					display: none;
+            	}
+            }
+        }
+
+.download {
+	background-color:$color-success;
+	@include media-query-bp($bp3) {
+		padding: 0 $gutterwidth;
+		line-height: 2;
+		max-width: 50px;
+		text-align: center;
+	}
+	&:hover {
+		background-color:darken($color-success, 10);
+	}
+}
