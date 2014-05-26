@@ -79,6 +79,12 @@ I do all the web code in CSS, HTML and JavaScript using a CSS framework created 
 -  [http://coolway.com/](http://coolway.com/) UX/UI and coded HTML/CSS. It was a fun site, since we worked under a design point of view more than accessibility and performance due to company requirements: they only wanted to show it in their own iPads to possible products distributors. 
 -  [http://www.ulanka.com/](http://www.ulanka.com/) I’m actually redesigning their website aiming to sell as much as they sale offline. This site particularly represents a back and forth fight, I have my preferences, of course, but they’re never unchallenged since clients and peers also have their preferences.
 
+## Workshops and courses I have run 
+Made for companies' developers and designers
+-  **Responsive Design Workshop** at [EscuelaIt](http://escuela.it/cursos/taller-maquetacion-responsive)
+- **CSS and Sass workflow and syntax** at [OCU](http://www.ocu.org/)
+- **(Web) Design workflow** at [Spielo GTech](http://www.gtech-interactive.com/home.aspx)
+
 ## What can I do for you?
 - Write the most optimal, robust and scalable CSS code.
 - Write an accesible, semantic and SEO friendly HTML
