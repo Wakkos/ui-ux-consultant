@@ -129,9 +129,9 @@ $basefontsize :      16;
 /**
  * Brand stuff
  */
-$basecolor      : rgb(105,210,231); // Blue 
+$basecolor      : rgb(250,105,0); // Rojo CoolVillage
 $basecolor-light: lighten($basecolor, 5%);
-$secondary      : rgb(250,105,0); // Rojo CoolVillage
+$secondary      : rgb(105,210,231); // Blue 
 $bordercolor    : lighten($secondary, 50); // Verde Bordes
 $compcolor      : rgb(216,240,227); //
 
