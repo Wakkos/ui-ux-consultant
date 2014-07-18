@@ -42,7 +42,7 @@
  * Navegación, oculta en resoluciones pequeñas.
  */
 .nav-main {
-	position: absolute;
+	position: fixed;
 	top:$baselineheight / 4;
 	right:$gutterwidth / 4;
     z-index: 100;
